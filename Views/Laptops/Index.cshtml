@@ -1,0 +1,57 @@
+﻿@model IEnumerable<laptops.Models.Laptops>
+
+@{
+    ViewData["Title"] = "Laptop Details";
+}
+
+<h1>Laptop Details</h1>
+
+<p>
+     
+    <a class="btn btn-primary" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LaptopName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LaptopName)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                 
+               <div class="btn-group" role="group" aria-label="Actions">
+                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.LaptopName">Edit</a>
+                 <a class="btn btn-success" asp-action="Details" asp-route-id="@item.LaptopName">Details</a>
+                 <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.LaptopName">Delete</a>
+                </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

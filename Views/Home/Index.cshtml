@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            background-image: url('/images/laptop.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Set height to fill viewport */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            color: black; /* Text color */
+        }
+
+        .text-center {
+            padding-top: 20%; /* Adjust as needed for vertical alignment */
+        }
+
+            .text-center h1 {
+                font-size: 4em; /* Adjust font size as needed */
+            }
+
+            .text-center p {
+                font-size: 1.5em; /* Adjust font size as needed */
+            }
+
+            .text-center a {
+                color: blue; /* Link color */
+            }
+    </style>
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+</body>
+</html>
