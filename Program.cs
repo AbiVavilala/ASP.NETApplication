@@ -1,6 +1,10 @@
 using laptops.Data;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using IKVM.Runtime;
+using Microsoft.Extensions.Hosting;
 
 namespace laptops
 {
@@ -9,8 +13,9 @@ namespace laptops
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+             
             // Add services to the container.
+
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
@@ -48,5 +53,12 @@ namespace laptops
 
             app.Run();
         }
+
+        private static object CreateWebHostBuilder(string[] args)
+        {
+            throw new NotImplementedException();
+        }
     }
-}
+    }
+ 
+
