@@ -98,4 +98,8 @@ let's go to Azure and click on the app to see our app load.
 ### test the app if it's working
 
 We will create a new laptop by logging into the app.
-![]()
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/create%20in%20azure.JPG)
+
+You can see the record is craeted.
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/create%20in%20azure1.JPG)
