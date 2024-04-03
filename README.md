@@ -64,4 +64,28 @@ once you configure application running on local workstation to database in azure
 
 ### deploy the application to webapp using Visual Studio
 
+Open the projectin visual studio and right click on the project and select publish
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/publish.JPG)
+
+Select Azure as the target to publish
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/publish1.JPG)
+
+Select Azure App service (windows)
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/publish2.JPG)
+
+Now Resource group and your subscription will open. 
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/publish3.JPG)
+
+In your resource group, apps will be shown and select the app to which you want to deploy this application.
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/publish4.JPG)
+
+
+Finally, select publish (generate pubxml file) click on Finish.
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/publish5.JPG)
 
