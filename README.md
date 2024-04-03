@@ -89,3 +89,13 @@ Finally, select publish (generate pubxml file) click on Finish.
 
 ![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/publish5.JPG)
 
+### Verify the app is published
+
+let's go to Azure and click on the app to see our app load.
+
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/ApponAzure.png)
+
+### test the app if it's working
+
+We will create a new laptop by logging into the app.
+![]()
