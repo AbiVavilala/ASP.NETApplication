@@ -38,3 +38,16 @@ Next, create the web app inside the app service plan. In the following example, 
 az webapp create --name ‘RGATES379617835-DevTest’ --plan ‘az400m04l09-sp1’ --subscription ‘Visual Studio Enterprise’ --resource-group ‘az400m04l09-rg’ --runtime “dotnet:6”
 
 ```
+
+### create azure sql server using Azure Cli
+
+```
+az sql server create --name $server --resource-group $resourceGroup --location "$location" --admin-user $login --admin-password $password
+echo "Configuring firewall..."
+```
+
+### Create Database 
+az sql db create --resource-group $resourceGroup --server $server --name $database --sample-name AdventureWorksLT --edition GeneralPurpose --family Gen5 --capacity 2 --zone-redundant true # zone redundancy is only supported on premium and business critical service tiers
+
+let's verify all the resources are deployed in azure
+
