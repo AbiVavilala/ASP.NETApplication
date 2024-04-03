@@ -51,3 +51,17 @@ az sql db create --resource-group $resourceGroup --server $server --name $databa
 
 let's verify all the resources are deployed in azure
 
+![](https://github.com/AbiVavilala/ASP.NETApplication/blob/master/images/resource%20created.JPG)
+
+
+### publish ASP.Net app to Azure using Visual Studio
+
+once you configure application running on local workstation to database in azure then it's time to push code into Azure.
+
+> **Note:**
+> 
+> Once you configure database to your local application by adding the string make sure to test go to SQL database server in firewall add your ip address.
+
+### deploy the application to webapp using Visual Studio
+
+
